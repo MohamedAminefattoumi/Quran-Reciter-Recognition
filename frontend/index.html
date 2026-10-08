@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Reciter Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1>Quran Reciter Recognition</h1>
+            <p class="subtitle">Identify the reciter from an audio or video file.</p>
+
+            <div class="upload-area">
+                <p>Upload your file</p>
+                <span>MP3, WAV, M4A, MP4, MOV, MKV, WEBM</span>
+
+                <label for="file-input" class="file-button">
+                    Choose File
+                </label>
+
+                <input
+                    type="file"
+                    id="file-input"
+                    accept=".mp3,.wav,.m4a,.aac,.flac,.mp4,.mov,.avi,.mkv,.webm"
+                    hidden
+                >
+
+                <p id="file-name">No file selected</p>
+            </div>
+
+            <button id="analyze-button" type="button">
+                Analyze
+            </button>
+
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Analyzing...</p>
+            </div>
+
+            <div id="result" class="result hidden">
+                <p class="result-label">Reciter</p>
+                <h2 id="prediction"></h2>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

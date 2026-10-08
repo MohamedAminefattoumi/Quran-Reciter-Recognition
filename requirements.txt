@@ -1,0 +1,15 @@
+# ML Pipeline & Audio Processing
+torch
+torchaudio
+speechbrain
+librosa
+soundfile
+scikit-learn
+pandas
+tqdm
+requests
+
+# Backend & Web Server
+fastapi
+uvicorn
+python-multipart

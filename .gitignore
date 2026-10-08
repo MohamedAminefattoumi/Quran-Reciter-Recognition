@@ -1,0 +1,48 @@
+# ── Audio / Video data ────────────────────────────────────────────────────────
+dataset/
+unknown_dataset/
+processed/
+uploads/
+tmp_audio/
+*.wav
+*.mp3
+*.mp4
+*.avi
+*.mkv
+
+# ── Model weights (too large for git) ─────────────────────────────────────────
+*.pt
+*.pth
+*.joblib
+*.pkl
+backend/models/*.pt
+backend/models/*.pth
+backend/models/*.joblib
+
+# ── Pretrained models (downloaded at runtime) ─────────────────────────────────
+pretrained_models/
+
+# ── Outputs (generated files) ─────────────────────────────────────────────────
+outputs/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
